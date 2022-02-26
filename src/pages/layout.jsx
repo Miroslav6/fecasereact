@@ -22,6 +22,9 @@ const Layout = () => {
                                         <Link to="/albums">Albums</Link>
                                     </li>
                                     <li>
+                                        <Link to="/table">Tables</Link>
+                                    </li>
+                                    <li>
                                         <Link to="/favourites">Favourites</Link>
                                     </li>
                                 </ul>
