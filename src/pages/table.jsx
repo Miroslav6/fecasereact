@@ -1,4 +1,3 @@
-// import * as React from 'react';
 import React, { useState, useEffect } from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -13,7 +12,6 @@ import $ from "jquery";
 const TableComponent = (props) => {
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState([]);
-    const [isChecked, setIsChecked] = useState(false);
 
     useEffect(() => {
 
@@ -33,12 +31,10 @@ const TableComponent = (props) => {
         
         fetchData();
 
-
     }, []);
 
     const tableHeading = ['', 'ID', 'Name', 'Username', 'Email', 'City'];
     const handleCheckboxChange = (e, row) => {
-       setIsChecked(e);
         if(e){
             $(`#row-${row.id}`).addClass('selected-row');
         }
@@ -65,7 +61,6 @@ const TableComponent = (props) => {
                             {data.map((row, index) => (
                                 <TableRow
                                     id={`row-${row.id}`}
-                                    // className={isChecked ? 'best' : ''}
                                     key={row.name}
                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                 >
@@ -73,20 +68,16 @@ const TableComponent = (props) => {
                                         <input
                                             id={`custom-checkbox-${data.id}`}
                                             type="checkbox"
-                                            // checked={isChecked}
                                             onChange={(e) => handleCheckboxChange(e.target.checked, row)}
-                                            // onChange={handleCheckboxChange}
-                                            // checked={isChecked}
-                                            
                                         />
                                     </TableCell>
                                     <TableCell component="td" scope="row">
                                         {row.id}
                                     </TableCell>
-                                    <TableCell align="right">{row.name}</TableCell>
-                                    <TableCell align="right">{row.username}</TableCell>
-                                    <TableCell align="right">{row.email}</TableCell>
-                                    <TableCell align="right">{row.address.city}</TableCell>
+                                    <TableCell align="left">{row.name}</TableCell>
+                                    <TableCell align="left">{row.username}</TableCell>
+                                    <TableCell align="left">{row.email}</TableCell>
+                                    <TableCell align="left">{row.address.city}</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>

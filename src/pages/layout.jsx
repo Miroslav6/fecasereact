@@ -7,25 +7,19 @@ const Layout = () => {
             <header className='sticky-top'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col col-sm-2'>
+                        <div className='col col-sm-1'>
                             <a href='/' title='logo'>
-                                <img src={Logo} alt="Logo" />
+                                <img src={Logo} alt="Logo" className="img-fluid" />
                             </a>
                         </div>
-                        <div className='col col-sm-7'>
+                        <div className='col col-sm-8'>
                             <nav className='h-100 d-flex justify-content-center'>
                                 <ul className='align-items-center'>
                                     <li>
                                         <Link to="/">Home</Link>
                                     </li>
                                     <li>
-                                        <Link to="/albums">Albums</Link>
-                                    </li>
-                                    <li>
                                         <Link to="/table">Tables</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/favourites">Favourites</Link>
                                     </li>
                                 </ul>
                             </nav>
@@ -39,9 +33,6 @@ const Layout = () => {
             <main>
                 <Outlet />
             </main>
-            <footer>
-
-            </footer>
         </>
     )
 };
