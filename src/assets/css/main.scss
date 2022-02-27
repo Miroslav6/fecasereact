@@ -27,7 +27,8 @@ body {
     font-size: $fontsize-m;
     font-family: $base-font-2;
     margin-bottom: $margin-xl;
-    background-color: $base-color;
+    background: rgb(198,80,192);
+    background: linear-gradient(230deg, rgba(198,80,192,1) 0%, rgba(67,88,207,1) 100%);
 
     h1 {
         font-size: 2em;

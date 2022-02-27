@@ -45,49 +45,50 @@ const Home = () => {
   };
   return (
     <div className='container mt-5'>
+      <div className='row'>
+        <div className='col'>
+          {!loading && (
 
-      {!loading && (
+            <TableContainer component={Paper} className='mb-5'>
+              <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                <TableHead>
+                  <TableRow>
+                    {tableHeading.map((item) => (
+                      <TableCell key={item}>{item}</TableCell>
+                    ))}
+                  </TableRow>
+                </TableHead>
 
-        <TableContainer component={Paper} className='mb-5'>
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
-            <TableHead>
-              <TableRow>
-                {tableHeading.map((item) => (
-                  <TableCell key={item}>{item}</TableCell>
-                ))}
-              </TableRow>
-            </TableHead>
+                <TableBody>
+                  {data.map((row, index) => (
+                    <TableRow
+                      id={`row-${row.id}`}
+                      key={row.name}
+                      sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                    >
+                      <TableCell component="td" scope="row">
+                        <input
+                          id={`custom-checkbox-${data.id}`}
+                          type="checkbox"
+                          onChange={(e) => handleCheckboxChange(e.target.checked, row)}
+                        />
+                      </TableCell>
+                      <TableCell component="td" scope="row">
+                        {row.id}
+                      </TableCell>
+                      <TableCell align="left">{row.name}</TableCell>
+                      <TableCell align="left">{row.username}</TableCell>
+                      <TableCell align="left">{row.email}</TableCell>
+                      <TableCell align="left">{row.address.city}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
 
-            <TableBody>
-              {data.map((row, index) => (
-                <TableRow
-                  id={`row-${row.id}`}
-                  key={row.name}
-                  sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                >
-                  <TableCell component="td" scope="row">
-                    <input
-                      id={`custom-checkbox-${data.id}`}
-                      type="checkbox"
-                      onChange={(e) => handleCheckboxChange(e.target.checked, row)}
-                    />
-                  </TableCell>
-                  <TableCell component="td" scope="row">
-                    {row.id}
-                  </TableCell>
-                  <TableCell align="left">{row.name}</TableCell>
-                  <TableCell align="left">{row.username}</TableCell>
-                  <TableCell align="left">{row.email}</TableCell>
-                  <TableCell align="left">{row.address.city}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-
-      )
-      }
-
+          )}
+        </div>
+      </div>
       <div className='row'>
         <div className='col'>
           <a href className='primary-btn'>View Photos</a>
