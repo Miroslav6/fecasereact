@@ -1,25 +1,93 @@
 @import "../css/fonts.scss";
 @import "../css/variables.scss";
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     background: none;
 }
 
@@ -27,8 +95,8 @@ body {
     font-size: $fontsize-m;
     font-family: $base-font-2;
     margin-bottom: $margin-xl;
-    background: rgb(198,80,192);
-    background: linear-gradient(230deg, rgba(198,80,192,1) 0%, rgba(67,88,207,1) 100%);
+    background: rgb(198, 80, 192);
+    background: linear-gradient(230deg, rgba(198, 80, 192, 1) 0%, rgba(67, 88, 207, 1) 100%);
 
     h1 {
         font-size: 2em;
@@ -66,28 +134,27 @@ body {
 }
 
 main {
-    table{
-
+    table {
         thead {
             background: #36304b;
-            tr{
-               th {
-                color: #fff !important;
-               }
+            tr {
+                th {
+                    color: #fff !important;
+                }
             }
         }
 
         tbody {
             tr {
                 background-color: #fff;
-                &:nth-child(2n){
+                &:nth-child(2n) {
                     background-color: #f5f5f5;
                 }
             }
-            tr.selected-row{
+            tr.selected-row {
                 background: green;
                 color: white;
-                td{
+                td {
                     color: inherit;
                 }
             }
@@ -97,45 +164,40 @@ main {
     .primary-btn {
         position: relative;
         display: flex;
-        background: rgb(246,246,246);
-        background: linear-gradient(90.05deg, #F7F7F7 0.04%, #CECECE 99.96%);
+        justify-content: center;
+        align-items: center;
         width: calc(200px - 15px);
         height: calc(42px - 14px);
         margin: 7px 7px 7px 9px;
-        justify-content: center;
-        align-items: center;
         border-radius: 7px;
+        background: rgb(246, 246, 246);
+        background: linear-gradient(90.05deg, #f7f7f7 0.04%, #cecece 99.96%);
         box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
         color: #000;
         text-decoration: none;
-        transition: opacity .3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
         &:hover {
             background: #fff;
             color: #000;
             cursor: pointer;
         }
         &:before {
-            content: '';
+            content: "";
             position: absolute;
             z-index: -1;
-            display: flex;
-            align-items: center;
             border-radius: 10px;
-            background: rgb(243,115,112);
-            background: linear-gradient(180deg, rgba(243,115,112,1) 0%, rgba(244,153,77,1) 100%);
+            background: rgb(243, 115, 112);
+            background: linear-gradient(180deg, rgba(243, 115, 112, 1) 0%, rgba(244, 153, 77, 1) 100%);
             width: calc(200px - 4px);
             height: calc(42px - 4px);
         }
         &:after {
-            content: '';
+            content: "";
             position: absolute;
             z-index: -2;
-            display: flex;
-            align-items: center;
             border-radius: 10px;
-            background: rgb(139,139,139);
-            background: linear-gradient(180deg, rgba(139,139,139,1) 0%, rgba(234,234,234,1) 100%);
-            text-align: center;
+            background: rgb(139, 139, 139);
+            background: linear-gradient(180deg, rgba(139, 139, 139, 1) 0%, rgba(234, 234, 234, 1) 100%);
             box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
             width: 200px;
             height: 42px;

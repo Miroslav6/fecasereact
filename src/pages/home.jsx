@@ -19,8 +19,6 @@ const Home = () => {
       setLoading(true);
       try {
         const { data: response } = await api.get('/users');
-        const newData = response.map(obj => ({ ...obj, isChecked: 'false' }))
-        console.log(newData);
         setData(response);
 
       } catch (error) {
@@ -41,7 +39,6 @@ const Home = () => {
     else {
       $(`#row-${row.id}`).removeClass('selected-row');
     }
-
   };
   return (
     <div className='container mt-5'>
@@ -60,7 +57,7 @@ const Home = () => {
                 </TableHead>
 
                 <TableBody>
-                  {data.map((row, index) => (
+                  {data.map((row) => (
                     <TableRow
                       id={`row-${row.id}`}
                       key={row.name}
@@ -91,7 +88,7 @@ const Home = () => {
       </div>
       <div className='row'>
         <div className='col'>
-          <a href className='primary-btn'>View Photos</a>
+          <a href='https://picsum.photos/' target='blank' className='primary-btn'>View Photos</a>
         </div>
       </div>
     </div>
