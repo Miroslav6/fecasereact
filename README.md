@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 This project was bootstrapped with Create React.
 
 The goal of the project is to create a page which contain a table with dynamic data.

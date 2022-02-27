@@ -93,7 +93,7 @@ video {
 
 body {
     font-size: $fontsize-m;
-    font-family: $base-font-2;
+    font-family: $base-font-1;
     margin-bottom: $margin-xl;
     background: rgb(198, 80, 192);
     background: linear-gradient(230deg, rgba(198, 80, 192, 1) 0%, rgba(67, 88, 207, 1) 100%);
@@ -176,6 +176,7 @@ body {
         color: #000;
         text-decoration: none;
         transition: opacity 0.3s ease-in-out;
+        font: 14px 'HelveticaNowDisplay',Arial, sans-serif;
         &:hover {
             background: #fff;
             color: #000;
