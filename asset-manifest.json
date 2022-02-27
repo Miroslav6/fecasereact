@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fecasereact/static/css/main.b8c7e707.css",
+    "main.css": "/fecasereact/static/css/main.33f54b31.css",
     "main.js": "/fecasereact/static/js/main.6a932fb4.js",
     "index.html": "/fecasereact/index.html",
-    "main.b8c7e707.css.map": "/fecasereact/static/css/main.b8c7e707.css.map",
+    "main.33f54b31.css.map": "/fecasereact/static/css/main.33f54b31.css.map",
     "main.6a932fb4.js.map": "/fecasereact/static/js/main.6a932fb4.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8c7e707.css",
+    "static/css/main.33f54b31.css",
     "static/js/main.6a932fb4.js"
   ]
 }
