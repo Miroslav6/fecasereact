@@ -1,5 +1,6 @@
 {
-  "name": "reactwebtask",
+  "homepage": "https://miroslav6.github.io/fecasereact/",
+  "name": "fecasereact",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Home from './pages/home';
-import Layout from './pages/layout'
-import NoPage from './pages/NoPage'
 import { Provider } from 'react-redux'
-import { PersistGate } from 'redux-persist/integration/react';
-import { store, persistor } from '../src/store/store'
+import { store } from '../src/store/store'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/main.scss';
@@ -16,14 +13,7 @@ ReactDOM.render(
 
   </React.StrictMode><BrowserRouter>
       <Provider store={store}>
-        <PersistGate persistor={persistor}>
-          <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Home />} />
-              <Route path="*" element={<NoPage />} />
-            </Route>
-          </Routes>
-        </PersistGate>
+        <Home />
       </Provider>
     </BrowserRouter></>,
   document.getElementById('root')
