@@ -64,41 +64,6 @@ body {
     }
 }
 
-header {
-    padding: $margin-m 0;
-    background-color: $color-3;
-    box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
-    nav {
-        font-size: $fontsize-l;
-
-        ul {
-            display: flex;
-            list-style-type: none;
-            li {
-                flex: 1 1 auto;
-                padding: 0 10px;
-
-                a {
-                    color: $color-1;
-                    font-weight: bold;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-
-    .hd-phone {
-        padding-right: 10px;
-        color: $color-1;
-        font-size: $fontsize-l;
-    }
-
-    .hd-contact {
-        font-size: $fontsize-l;
-        color: $color-1;
-    }
-}
-
 main {
     table{
 
@@ -109,7 +74,6 @@ main {
                 color: #fff !important;
                }
             }
-            
         }
 
         tbody {
@@ -176,5 +140,4 @@ main {
             height: 42px;
         }
     }
-
 }
