@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/fecasereact/static/css/main.33f54b31.css",
+    "main.css": "/fecasereact/static/css/main.6decd6ed.css",
     "main.js": "/fecasereact/static/js/main.adb4b51f.js",
+    "static/media/HelveticaNowDisplay-Bold.woff": "/fecasereact/static/media/HelveticaNowDisplay-Bold.91ea64ab36feb803fc2f.woff",
+    "static/media/HelveticaNowDisplay-Bold.woff2": "/fecasereact/static/media/HelveticaNowDisplay-Bold.7f513c60ffd0a2f87a00.woff2",
     "index.html": "/fecasereact/index.html",
-    "main.33f54b31.css.map": "/fecasereact/static/css/main.33f54b31.css.map",
+    "main.6decd6ed.css.map": "/fecasereact/static/css/main.6decd6ed.css.map",
     "main.adb4b51f.js.map": "/fecasereact/static/js/main.adb4b51f.js.map"
   },
   "entrypoints": [
-    "static/css/main.33f54b31.css",
+    "static/css/main.6decd6ed.css",
     "static/js/main.adb4b51f.js"
   ]
 }
