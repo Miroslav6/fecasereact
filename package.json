@@ -16,6 +16,7 @@
     "bulma": "^0.9.3",
     "easybase-react": "^2.2.13",
     "htmlparser2": "^7.2.0",
+    "jquery": "^3.6.0",
     "json-server": "^0.17.0",
     "json-server-auth": "^2.1.0",
     "jwt-decode": "^3.1.2",

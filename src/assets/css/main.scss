@@ -101,6 +101,10 @@ header {
 
 main {
 
+    .selected-row{
+        background: red;
+    }
+
     .primary-btn {
         position: relative;
         display: flex;
